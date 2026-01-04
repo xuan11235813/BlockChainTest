@@ -3,10 +3,7 @@
     <!-- 导航栏 -->
     <nav class="navbar" :class="{ 'scrolled': scrolled }">
       <div class="nav-container">
-        <div class="logo">
-          <img src="/eigen-logo.svg" alt="Eigen Logo" class="logo-img" />
-          <span class="logo-text">Hong Kong Eigen Technology</span>
-        </div>
+        
         <ul class="nav-menu">
           <li v-for="(item, index) in navItems" :key="index" 
               :class="{ 'active': currentSection === item.id }">
@@ -137,33 +134,8 @@
                     </a>
                 </div>
             </div>
-            
             <!-- Service Process -->
-            <div class="service-process">
-                <h2>Our Development Process</h2>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="process-number">1</div>
-                        <h3>Discovery</h3>
-                        <p>Understand requirements and define scope.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="process-number">2</div>
-                        <h3>Design</h3>
-                        <p>Create system architecture and specifications.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="process-number">3</div>
-                        <h3>Development</h3>
-                        <p>Implement with rigorous testing.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="process-number">4</div>
-                        <h3>Deployment</h3>
-                        <p>Deploy and provide ongoing support.</p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         </section>
 
@@ -178,27 +150,22 @@
                     <!-- Layer 1 & 2 Blockchains -->
                     <div class="tech-category">
                         <h2 class="category-title">
-                            <span class="category-icon">🔗</span>
                             Layer 1 & 2
                         </h2>
                         <div class="tech-grid">
                             <div class="tech-item">
-                                <div class="tech-icon">⛓️</div>
                                 <h3>Ethereum</h3>
                                 <p>Smart contract platform</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">🔷</div>
                                 <h3>Polygon</h3>
                                 <p>Layer 2 scaling</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">🟠</div>
                                 <h3>BNB Chain</h3>
                                 <p>High-performance</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">⚡</div>
                                 <h3>Solana</h3>
                                 <p>High-speed, low-cost</p>
                             </div>
@@ -208,27 +175,22 @@
                     <!-- Smart Contract Development -->
                     <div class="tech-category">
                         <h2 class="category-title">
-                            <span class="category-icon">💻</span>
                             Smart Contracts
                         </h2>
                         <div class="tech-grid">
                             <div class="tech-item">
-                                <div class="tech-icon">📝</div>
                                 <h3>Solidity</h3>
                                 <p>Ethereum smart contracts</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">🦀</div>
                                 <h3>Rust</h3>
                                 <p>Secure contract development</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">🛠️</div>
                                 <h3>Hardhat</h3>
                                 <p>Ethereum development</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">📦</div>
                                 <h3>OpenZeppelin</h3>
                                 <p>Smart contract libraries</p>
                             </div>
@@ -238,27 +200,22 @@
                     <!-- Web3 Development -->
                     <div class="tech-category">
                         <h2 class="category-title">
-                            <span class="category-icon">🌐</span>
                             Web3 Development
                         </h2>
                         <div class="tech-grid">
                             <div class="tech-item">
-                                <div class="tech-icon">🔌</div>
                                 <h3>Ethers.js</h3>
                                 <p>Ethereum JavaScript API</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">🔗</div>
                                 <h3>WalletConnect</h3>
                                 <p>Multi-chain wallet connection</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">🗄️</div>
                                 <h3>IPFS</h3>
                                 <p>Decentralized storage</p>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">📱</div>
                                 <h3>React</h3>
                                 <p>Web3 UI development</p>
                             </div>
@@ -279,7 +236,6 @@
                 <div class="cases-container-inner">
                     <!-- Case 1 -->
                     <div class="case-card">
-                        <div class="case-icon">📱</div>
                         <h3>DeFi Yield Farming DApp</h3>
                         <p class="case-category">DApp Development</p>
                         <p class="case-description">Developed a comprehensive DeFi yield farming platform.</p>
@@ -295,7 +251,6 @@
 
                     <!-- Case 2 -->
                     <div class="case-card">
-                        <div class="case-icon">⚡</div>
                         <h3>Multi-Signature Wallet</h3>
                         <p class="case-category">Smart Contract Development</p>
                         <p class="case-description">Secure multi-signature wallet for DAO treasury management.</p>
@@ -311,7 +266,6 @@
 
                     <!-- Case 3 -->
                     <div class="case-card">
-                        <div class="case-icon">🔗</div>
                         <h3>Supply Chain Blockchain</h3>
                         <p class="case-category">Consortium Blockchain</p>
                         <p class="case-description">Private consortium blockchain for supply chain tracking.</p>
@@ -327,7 +281,6 @@
 
                     <!-- Case 4 -->
                     <div class="case-card">
-                        <div class="case-icon">🎮</div>
                         <h3>Blockchain Gaming Platform</h3>
                         <p class="case-category">Web3 Game Development</p>
                         <p class="case-description">Blockchain gaming platform with play-to-earn mechanics.</p>
@@ -350,7 +303,6 @@
         <div class="content">
           <h1>Our Team</h1>
           <p class="section-subtitle">Diverse expertise from around the globe</p>
-          <p>Our team of professionals brings together expertise from various industries and technical backgrounds to deliver exceptional results. We're passionate about blockchain technology and committed to building the future of decentralized finance.</p>
           
           <div class="team-grid">
             <div class="team-grid-inner">
@@ -358,23 +310,7 @@
             <div class="team-member">
               <div class="member-image">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" alt="Thomas Lee" class="member-portrait">
-                <div class="member-social">
-                  <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                </div>
+
               </div>
               <h3>Thomas Lee</h3>
               <p class="member-title">CEO & Founder</p>
@@ -385,23 +321,7 @@
             <div class="team-member">
               <div class="member-image">
                 <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" alt="Luis Chen" class="member-portrait">
-                <div class="member-social">
-                  <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                </div>
+
               </div>
               <h3>Luis Chen</h3>
               <p class="member-title">CTO</p>
@@ -412,23 +332,7 @@
             <div class="team-member">
               <div class="member-image">
                 <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" alt="Eddie Cao" class="member-portrait">
-                <div class="member-social">
-                  <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                </div>
+                
               </div>
               <h3>Eddie Cao</h3>
               <p class="member-title">Cofounder & CFO</p>
@@ -439,82 +343,13 @@
             <div class="team-member">
               <div class="member-image">
                 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" alt="Sarah Zhang" class="member-portrait">
-                <div class="member-social">
-                  <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                </div>
+               
               </div>
               <h3>Sarah Zhang</h3>
               <p class="member-title">Head of Operations</p>
               <p class="member-bio">Sarah has extensive experience in project management and operations for blockchain startups. She ensures our projects are delivered on time and within budget, while maintaining the highest quality standards.</p>
             </div>
             
-            <!-- Team Member 5 -->
-            <div class="team-member">
-              <div class="member-image">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" alt="Mike Johnson" class="member-portrait">
-                <div class="member-social">
-                  <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3>Mike Johnson</h3>
-              <p class="member-title">Lead Blockchain Developer</p>
-              <p class="member-bio">Mike is a senior blockchain developer with expertise in Ethereum, Solana, and Polygon. He has built numerous smart contracts and DApps, and leads our technical team in developing cutting-edge blockchain solutions.</p>
-            </div>
-            
-            <!-- Team Member 6 -->
-            <div class="team-member">
-              <div class="member-image">
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80" alt="Emily Davis" class="member-portrait">
-                <div class="member-social">
-                  <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3>Emily Davis</h3>
-              <p class="member-title">UX/UI Designer</p>
-              <p class="member-bio">Emily is a creative UX/UI designer with expertise in Web3 interfaces. She creates intuitive and engaging user experiences for our DApps, ensuring they are both functional and visually appealing.</p>
-            </div>
             </div>
           </div>
         </div>
@@ -533,22 +368,18 @@
               <form class="contact-form">
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                   </div>
                   <div class="form-group">
-                    <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                   </div>
                 </div>
                 
                 <div class="form-group">
-                  <label for="subject">Subject</label>
                   <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
                 </div>
                 
                 <div class="form-group">
-                  <label for="message">Your Message</label>
                   <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
                 </div>
                 
@@ -568,16 +399,7 @@
                   <div class="contact-icon">📍</div>
                   <div class="contact-text">
                     <h3>Address</h3>
-                    <p>123 Innovation Drive, Tech City, TC 10101</p>
-                    <p>Hong Kong SAR, China</p>
-                  </div>
-                </div>
-                <div class="contact-item">
-                  <div class="contact-icon">📞</div>
-                  <div class="contact-text">
-                    <h3>Phone</h3>
-                    <p>+852 1234 5678 (Hong Kong)</p>
-                    <p>+1 (555) 123-4567 (International)</p>
+                    <p>123 Innovation Drive, Tech City, TC 10101 Hong Kong SAR, China</p>
                   </div>
                 </div>
                 <div class="contact-item">
@@ -598,90 +420,14 @@
                 </div>
               </div>
               
-              <!-- Social Media -->
-              <div class="contact-social">
-                <h2>Follow Us</h2>
-                <div class="social-links">
-                  <a href="#" class="social-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.401z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="social-link" aria-label="Discord">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
               
-              <!-- Map -->
-              <div class="map-container">
-                <h2>Visit Our Office</h2>
-                <div class="map-placeholder">
-                  <div class="map-icon">🗺️</div>
-                  <p>Interactive Map Integration</p>
-                  <p class="map-note">123 Innovation Drive, Tech City, TC 10101</p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Privacy 页面 -->
-      <section id="privacy" class="section privacy-section-page">
-        <div class="content">
-          <h1>Privacy Policy</h1>
-          <p class="section-subtitle">Last Updated: December 16, 2024</p>
-          
-          <div class="privacy-content">
-            <div class="privacy-intro">
-              <p>At Eigen Technologies, we are committed to protecting your privacy and ensuring the security of your personal information.</p>
-            </div>
-            
-            <div class="privacy-section">
-              <h3>1. Information We Collect</h3>
-              <p>We collect personal information you provide and automatically collected data such as device information and usage data.</p>
-            </div>
-            
-            <div class="privacy-section">
-              <h3>2. How We Use Your Information</h3>
-              <p>We use your information to provide services, process transactions, respond to inquiries, and improve our offerings.</p>
-            </div>
-            
-            <div class="privacy-section">
-              <h3>3. Information Sharing</h3>
-              <p>We share information with service providers, as required by law, and in business transfers.</p>
-            </div>
-            
-            <div class="privacy-section">
-              <h3>4. Data Security</h3>
-              <p>We implement industry-standard security measures to protect your information.</p>
-            </div>
-            
-            <div class="privacy-section">
-              <h3>5. Your Rights</h3>
-              <p>You have rights to access, correct, and delete your personal information.</p>
-            </div>
-            
-            <div class="privacy-section">
-              <h3>6. Contact Us</h3>
-              <p>For privacy-related questions, please contact us at <a href="mailto:privacy@eigentech.com" class="privacy-link">privacy@eigentech.com</a>.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   </div>
 </template>
@@ -700,8 +446,7 @@ export default {
         { id: 'technologies', name: 'Technologies' },
         { id: 'cases', name: 'Cases' },
         { id: 'team', name: 'Team' },
-        { id: 'contact', name: 'Contact' },
-        { id: 'privacy', name: 'Privacy' }
+        { id: 'contact', name: 'Contact' }
       ],
       isScrolling: false,
       observer: null
@@ -864,7 +609,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -974,13 +719,13 @@ body {
 
 .content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   text-align: center;
   padding: 15px;
   box-sizing: border-box;
   position: relative;
   z-index: 2;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1022,7 +767,7 @@ body {
 
 /* Service Process */
 .service-process {
-  margin: 60px 0;
+  margin: 10px 0;
   text-align: center;
   animation: fadeInUp 1s ease-out;
 }
@@ -1110,7 +855,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
@@ -1146,8 +891,8 @@ body {
 .mission-vision-values {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 40px 0;
+  gap: 15px;
+  margin: 5px 0;
 }
 
 .mv-item {
@@ -1488,14 +1233,14 @@ body {
 /* Content base styles */
 .content h1 {
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-weight: 700;
 }
 
 .content p {
   font-size: 1.1rem;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 /* Technologies page styles */
@@ -1506,31 +1251,34 @@ body {
 }
 
 .technologies-section .content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  
 }
 
-/* 技术分类横向滚动容器 */
+/* 技术分类容器 */
 .tech-categories {
   position: relative;
-  margin: 20px 0;
+  margin: 0 auto;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-/* 横向滚动内容 */
+/* 技术分类内部容器 */
 .tech-categories-inner {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
-  scroll-behavior: smooth;
   padding: 10px 0;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(52, 152, 219, 0.5) rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .tech-categories-inner::-webkit-scrollbar {
@@ -1567,9 +1315,9 @@ body {
 }
 
 .category-title {
-  font-size: 2rem;
+  font-size: 2cqmax;
   color: #3498db;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -1582,15 +1330,15 @@ body {
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin: 30px 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+  margin: 5px 0;
   width: 100%;
 }
 
 .tech-item {
   background: rgba(255, 255, 255, 0.1);
-  padding: 30px 25px;
+  padding: 5px 5px;
   border-radius: 12px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1762,31 +1510,33 @@ body {
 }
 
 .team-section .content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   width: 100%;
 }
 
-/* 团队成员横向滚动容器 */
+/* 团队成员网格容器 */
 .team-grid {
   position: relative;
   margin: 20px 0;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 横向滚动内容 */
+/* 团队成员网格内容 */
 .team-grid-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
-  scroll-behavior: smooth;
   padding: 10px 0;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(52, 152, 219, 0.5) rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  width: 100%;
 }
 
 .team-grid-inner::-webkit-scrollbar {
@@ -1805,12 +1555,10 @@ body {
 
 /* 团队成员卡片 */
 .team-member {
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
-  min-width: 280px;
   max-width: 320px;
-  flex-shrink: 0;
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 15px;
@@ -1820,18 +1568,20 @@ body {
 }
 
 .member-image {
-  position: relative;
+  position: absolute;
+  top: 30px;
+  left: 30px;
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .team-member .member-portrait {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto;
-  display: block;
+  margin: 0;
+  display: inline-block;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   border: 3px solid rgba(52, 152, 219, 0.5);
@@ -1847,8 +1597,8 @@ body {
 .member-social {
   position: absolute;
   bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 30px;
+  transform: none;
   display: flex;
   gap: 10px;
   background: rgba(52, 152, 219, 0.9);
@@ -1861,7 +1611,7 @@ body {
 
 .member-image:hover .member-social {
   bottom: -20px;
-  transform: translateX(-50%) translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .social-link {
@@ -1893,6 +1643,7 @@ body {
 /* Team Member Info */
 .team-member h3 {
   font-size: 1.8rem;
+  margin-left: 90px;
   margin-bottom: 8px;
   color: white;
   font-weight: 700;
@@ -1901,6 +1652,7 @@ body {
 .member-title {
   font-size: 1.2rem;
   color: #3498db;
+  margin-left: 90px;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -1910,7 +1662,7 @@ body {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .tech-list {
@@ -1949,7 +1701,7 @@ body {
 }
 
 .contact-form-container h2 {
-  color: #3498db;
+  color: #ffffff;
   margin-bottom: 30px;
   font-size: 2rem;
 }
@@ -2045,13 +1797,13 @@ body {
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 0px;
 }
 
 /* Contact Info */
 .contact-info {
   background: rgba(255, 255, 255, 0.1);
-  padding: 35px;
+  padding: 10px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2059,7 +1811,7 @@ body {
 }
 
 .contact-info h2 {
-  color: #3498db;
+  color: #ffffff;
   margin-bottom: 25px;
   font-size: 1.8rem;
 }
@@ -2343,7 +2095,7 @@ body {
 }
 
 /* 响应式设计 */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   /* 导航栏调整 */
   .nav-container {
     max-width: 90%;
@@ -2352,11 +2104,6 @@ body {
   /* 服务页面网格调整 */
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  
-  /* 案例页面网格调整 */
-  .cases-container {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   
   /* 联系页面布局调整 */
@@ -2390,7 +2137,7 @@ body {
   }
   
   /* 团队页面网格调整 */
-  .team-grid {
+  .team-grid-inner {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
@@ -2481,7 +2228,6 @@ body {
   
   /* 案例页面调整 */
   .cases-container {
-    grid-template-columns: 1fr;
     gap: 25px;
   }
   
@@ -2496,7 +2242,7 @@ body {
   }
   
   /* 团队页面调整 */
-  .team-grid {
+  .team-grid-inner {
     grid-template-columns: 1fr;
     gap: 25px;
   }
@@ -2610,7 +2356,7 @@ body {
   
   /* 案例卡片调整 */
   .case-card {
-    padding: 25px 20px;
+    padding: 5px 5px;
   }
   
   /* 技术项目调整 */
@@ -2637,31 +2383,35 @@ body {
 }
 
 .cases-section .content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   width: 100%;
 }
 
-/* 案例卡片横向滚动容器 */
+/* 案例卡片容器 */
 .cases-container {
   position: relative;
-  margin: 40px 0;
+  margin: 20px 0;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 横向滚动内容 */
+/* 案例卡片内部容器 */
 .cases-container-inner {
   display: flex;
-  gap: 30px;
-  overflow-x: auto;
+  gap: 10px;
+  overflow-x: hidden;
   overflow-y: hidden;
-  scroll-behavior: smooth;
-  padding: 20px 0;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(52, 152, 219, 0.5) rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  max-width: 1200px;
+  width: 100%;
+  
 }
 
 .cases-container-inner::-webkit-scrollbar {
@@ -2681,7 +2431,7 @@ body {
 /* 案例卡片 */
 .case-card {
   background: rgba(255, 255, 255, 0.1);
-  padding: 35px;
+  padding: 15px;
   border-radius: 15px;
   transition: all 0.3s ease;
   display: flex;
@@ -2691,8 +2441,8 @@ body {
   animation: fadeInUp 1s ease-out;
   position: relative;
   overflow: hidden;
-  min-width: 320px;
-  max-width: 380px;
+  min-width: 200px;
+  max-width: 280px;
   flex-shrink: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2846,13 +2596,13 @@ body {
 /* 响应式设计 */
 @media (max-width: 1024px) {
   .cases-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 已改为flex布局，此处无需grid属性 */
   }
 }
 
 @media (max-width: 768px) {
   .cases-container {
-    grid-template-columns: 1fr;
+    /* 已改为flex布局，此处无需grid属性 */
   }
   
   .case-card {
@@ -2872,7 +2622,7 @@ body {
 }
 
 /* 响应式设计 */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
